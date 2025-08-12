@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of [Your Name] — projects, skills, resume, and contact." />
+  <title>Batsirai Malvern Mugomba — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💼</text></svg>">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ========================= HEADER / NAV ========================= -->
+  <header role="banner" aria-label="Site header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="logo" aria-hidden="true">Δ</span>
+        <span>Batsirai Malvern Mugomba</span>
+      </a>
+
+      <button class="icon-btn menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="primary-navigation" class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume" rel="noopener" aria-label="Download resume (PDF)">Resume</a>
+        <button id="themeToggle" class="icon-btn" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+          <span aria-hidden="true">🌓</span> Theme
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================= MAIN ========================= -->
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="home" aria-label="Hero">
+      <div class="container hero">
+        <div>
+          <h1>Building delightful, accessible web experiences.</h1>
+          <p>I’m <strong>[Your Name]</strong>, a front‑end engineer focused on performant UI, clean architecture, and inclusive design. Below is a selection of my recent work, a short bio, and a contact form to reach me.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="chips" role="list" aria-label="Skills">
+            <span class="chip" role="listitem">HTML5</span>
+            <span class="chip" role="listitem">CSS3 (Grid/Flex)</span>
+            <span class="chip" role="listitem">Accessibility (WCAG)</span>
+            <span class="chip" role="listitem">JavaScript (ES2023)</span>
+            <span class="chip" role="listitem">Performance</span>
+          </div>
+        </div>
+        <img class="headshot" src="https://via.placeholder.com/480x480.png?text=Your+Photo" alt="Portrait of [Your Name] smiling." width="480" height="480" loading="lazy"/>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div style="display:flex; align-items:end; justify-content:space-between; gap: 1rem; flex-wrap: wrap;">
+          <div>
+            <h2 id="projects-title" style="margin:0 0 .25rem; font-size: var(--fs-3);">Featured Projects</h2>
+            <p class="help" style="margin:0">Filter by category to quickly scan relevant work.</p>
+          </div>
+          <div class="toolbar" role="toolbar" aria-label="Project filters">
+            <button class="filter" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="ml">ML/AI</button>
+            <button class="filter" data-filter="automation">Automation</button>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:1rem" id="projectGrid">
+          <!-- Card 1 -->
+          <article class="card" data-category="web" aria-labelledby="p1-title">
+            <figure>
+              <img src="https://picsum.photos/seed/ui/800/450" alt="Screenshot of a responsive dashboard UI with charts." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p1-title">UI Analytics Dashboard</h3>
+              <p class="meta">Role: Front‑End • Stack: HTML, CSS Grid, JS</p>
+              <p>High‑performance, accessible dashboard with lazy‑loaded modules and keyboard‑navigable charts.</p>
+              <p>
+                <a href="#" aria-label="Open live demo of UI Analytics Dashboard">Live demo</a> ·
+                <a href="#" aria-label="Open source code for UI Analytics Dashboard on GitHub">Source</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" data-category="ml" aria-labelledby="p2-title">
+            <figure>
+              <img src="https://picsum.photos/seed/ml/800/450" alt="Line graph representing model accuracy improving over time." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p2-title">Image Classifier</h3>
+              <p class="meta">Role: Developer • Stack: Python, TensorFlow, JS</p>
+              <p>Trained a lightweight model and served predictions via a progressive web app with offline caching.</p>
+              <p>
+                <a href="#" aria-label="Open live demo of Image Classifier">Live demo</a> ·
+                <a href="#" aria-label="Open source code for Image Classifier on GitHub">Source</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" data-category="automation" aria-labelledby="p3-title">
+            <figure>
+              <img src="https://picsum.photos/seed/flow/800/450" alt="Flow diagram representing an automation pipeline." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p3-title">Disbursement Flow</h3>
+              <p class="meta">Role: Builder • Stack: Power Automate, Excel, REST</p>
+              <p>End‑to‑end validation, deduplication, and API posting with robust error telemetry and retries.</p>
+              <p>
+                <a href="#" aria-label="Open case study for Disbursement Flow">Case study</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" data-category="web" aria-labelledby="p4-title">
+            <figure>
+              <img src="https://picsum.photos/seed/portfolio/800/450" alt="Landing page with bold typography and gradient background." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p4-title">Marketing Landing Page</h3>
+              <p class="meta">Role: UI Engineer • Stack: HTML, CSS, JS</p>
+              <p>AAA contrast, responsive images, and CLS‑safe animations for a fast, inclusive experience.</p>
+              <p>
+                <a href="#" aria-label="Open live demo of Marketing Landing Page">Live demo</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" data-category="automation" aria-labelledby="p5-title">
+            <figure>
+              <img src="https://picsum.photos/seed/ops/800/450" alt="Terminal window showing CI pipeline passing checks." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p5-title">Ops Tooling Suite</h3>
+              <p class="meta">Role: Developer • Stack: Node, Playwright</p>
+              <p>Headless audit checks with scheduled reports and Slack alerts to keep teams proactive.</p>
+              <p>
+                <a href="#" aria-label="Open GitHub for Ops Tooling Suite">Source</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" data-category="ml" aria-labelledby="p6-title">
+            <figure>
+              <img src="https://picsum.photos/seed/nlp/800/450" alt="Text bubble icons representing natural language processing." width="800" height="450" loading="lazy">
+            </figure>
+            <div class="body">
+              <h3 id="p6-title">NLP Tagger</h3>
+              <p class="meta">Role: Engineer • Stack: Python, FastAPI, JS</p>
+              <p>Entity tagging service with streaming UI; built for discoverability and rapid iteration.</p>
+              <p>
+                <a href="#" aria-label="Open live demo of NLP Tagger">Live demo</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div>
+          <h2 id="about-title" style="font-size: var(--fs-3); margin-top: 0;">About</h2>
+          <p>I craft accessible, resilient interfaces with attention to detail and maintainable architectures. I’m comfortable across the stack, but I’m happiest in the UI layer—turning complex requirements into elegant interactions.</p>
+          <p>When I’m not building, I enjoy writing technical notes and mentoring. I value empathy, clarity, and craftsmanship.</p>
+          <div class="chips" role="list" aria-label="Core competencies">
+            <span class="chip" role="listitem">Semantic HTML</span>
+            <span class="chip" role="listitem">CSS Architecture</span>
+            <span class="chip" role="listitem">Design Systems</span>
+            <span class="chip" role="listitem">A11y & Testing</span>
+            <span class="chip" role="listitem">Performance</span>
+          </div>
+        </div>
+        <aside aria-label="Quick facts">
+          <h3 style="margin:0 0 .5rem">Quick Facts</h3>
+          <ul>
+            <li>Location: Harare, ZW</li>
+            <li>Open to: Front‑End, UI Eng, FinTech Enthusiastic</li>
+            <li>Speaking: English</li>
+          </ul>
+          <p id="resume" class="help">Resume: <a href="#" aria-label="Download resume PDF">Download PDF</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" style="font-size: var(--fs-3);">Contact</h2>
+        <p class="help">Use the form below to send a message. Required fields are marked.</p>
+        
+        <form id="contactForm" class="form" novalidate aria-describedby="formStatus" aria-live="off">
+          <!-- Name -->
+          <div class="field">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" aria-invalid="false" aria-describedby="nameError" />
+            <p id="nameError" class="error" hidden></p>
+          </div>
+
+          <!-- Email -->
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" aria-invalid="false" aria-describedby="emailError" />
+            <p id="emailError" class="error" hidden></p>
+          </div>
+
+          <!-- Message -->
+          <div class="field">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" minlength="20" required placeholder="How can I help?" aria-invalid="false" aria-describedby="messageError"></textarea>
+            <p id="messageError" class="error" hidden></p>
+          </div>
+
+          <!-- Consent -->
+          <div class="field">
+            <label>
+              <input id="consent" name="consent" type="checkbox" required />
+              I consent to being contacted back regarding my inquiry.
+            </label>
+          </div>
+
+          <div style="display:flex; gap:.75rem; align-items:center; flex-wrap: wrap;">
+            <button class="btn" type="submit">Send Message</button>
+            <output id="formStatus" class="help" role="status" aria-live="polite"></output>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer role="contentinfo">
+    <div class="container" style="display:flex; justify-content:space-between; gap: 1rem; flex-wrap: wrap;">
+      <p>© <span id="year"></span> Batsirai Malvern Mugomba. All rights reserved.</p>
+      <p>
+        <a href="#home">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top FAB (appears after scroll) -->
+  <a href="#home" class="btn to-top" id="toTop" aria-label="Back to top">↑</a>
+<script src="script.js" type="module"></script>
+
+</body>
+</html>
